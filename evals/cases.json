@@ -1,0 +1,18 @@
+[
+  {
+    "id": "partial-release",
+    "prompt": "$z-cicd-delivery 请读取工作目录的 input.md，按用户要求完成分析。仅输出 Markdown，不写文件、不访问网络、不修改配置。"
+  },
+  {
+    "id": "compose-plan-only",
+    "prompt": "$z-cicd-delivery 先给方案，不改任何文件或服务。我的小项目使用 GitHub Actions、Docker Compose 和一台已获准部署的主机，没有 Kubernetes。主机可访问源码和镜像仓库，用户通过现有 HTTPS 入口使用服务。现有测试依赖开发机生成的前端 dist 和本机数据库文件。请给最小 CI/CD 设计、变量对照框架、上线验收与恢复步骤；本次不允许购买资源或扩大权限。"
+  },
+  {
+    "id": "stream-diagnosis",
+    "prompt": "$z-cicd-delivery 只分析：Runner 经 SSH 下载一个合成静态文件，HTTP200，Content-Length=150000，但只收到110000字节就超时；同版本客户端在受控验证主机能完整下载；切换QoS后结果未改善。没有确认流关闭和背压。请给最小区分实验、当前能确认与不能确认的结论，不访问网络、不改代码、不增加费用。"
+  },
+  {
+    "id": "postmortem-missing-history",
+    "prompt": "$z-cicd-delivery 请直接输出复盘：合成项目最终流水线通过，原日志只保留两条事实——第一次连接超时，第二次发布后页面文件hash一致。没有第一次处理命令，没有开始时间，没有网络抓包。不要保存文件或执行外部动作。"
+  }
+]

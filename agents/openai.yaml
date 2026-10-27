@@ -1,0 +1,4 @@
+interface:
+  display_name: "z-CI/CD 交付与排障"
+  short_description: "从干净构建到上线验收，诊断失败、核对发布副作用并沉淀复盘"
+  default_prompt: "使用 $z-cicd-delivery 检查当前项目的 CI/CD，按现有授权完成设计、排障或交付，并核对实际发布状态与验收证据。"
